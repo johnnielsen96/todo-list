@@ -1,9 +1,13 @@
 const express = require('express');
+const connectDB = require('./config/db')
 
 const app = express();
 
+//Connect Database
+connectDB();
+
 app.get('/', (req, res) => {
-    res.send('This is first Git');
+    res.send('Hello World!');
 });
 
 const port = process.env.PORT | 8082;
