@@ -2,7 +2,7 @@ const express = require ('express');
 const router = express.Router ();
 
 //Load Book Model
-const Book = require ('../../models/Books');
+const Book = require ('../../models/Book');
 
 router.get ('/test', (req, res) => res.send ('book route testing!'));
 
